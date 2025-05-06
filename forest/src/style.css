@@ -10,4 +10,7 @@
   --color-verde-950: #030504;
 }
 @layer utilities {
+  .container {
+    @apply max-w-[94rem];
+  }
 }

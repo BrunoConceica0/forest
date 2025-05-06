@@ -3,13 +3,15 @@
     class="bg-[radial-gradient(circle,_var(--color-verde-700),_var(--color-verde-900))]"
   >
     <TheHeader />
+    <theMain />
   </div>
 </template>
 
 <script>
 import TheHeader from "./assets/view/Home/TheHeader.vue";
+import TheMain from "./assets/view/Home/TheMain.vue";
 export default {
-  components: { TheHeader },
+  components: { TheHeader, TheMain },
 };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <header class="container mx-auto">
     <ClimateComponent class="pt-4 pb-2" />
-    <article class="flex justify-between p-4 items-center">
+    <article class="flex justify-between py-4 items-center">
       <div>
         <img src="../../../img/forest.svg" alt="Logo da Forest" />
       </div>
@@ -14,7 +14,11 @@
             v-for="(navigation, index) in navigations"
             :key="index"
           >
-            <a :href="navigation.link">{{ navigation.name }}</a>
+            <a
+              class="border-b-2 border-transparent hover:border-b-2 hover:border-white trabnsition-all duration-300 ease-in-out py-1"
+              :href="navigation.link"
+              >{{ navigation.name }}</a
+            >
           </li>
         </ul>
       </nav>
