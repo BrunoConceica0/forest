@@ -26,7 +26,7 @@
   </header>
 </template>
 
-<script>
+<script >
 import { navigationLinks } from "../constant/headerNav";
 import ClimateComponent from "../../../components/ClimateComponent.vue";
 // import { ref } from "vue";
