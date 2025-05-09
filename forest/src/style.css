@@ -14,3 +14,8 @@
     @apply max-w-[94rem];
   }
 }
+@layer components {
+  .neon {
+    @apply border border-verde-400  shadow-[0_0_6px_1px_var(--color-verde-200)] rounded-full;
+  }
+}

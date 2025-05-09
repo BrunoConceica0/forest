@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-[radial-gradient(circle,_var(--color-verde-700),_var(--color-verde-900))]"
+    class="bg-[radial-gradient(circle,_var(--color-verde-700),_var(--color-verde-900))] pb-96"
   >
     <TheHeader />
     <theMain />
