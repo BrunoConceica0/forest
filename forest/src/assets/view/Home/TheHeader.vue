@@ -7,7 +7,7 @@
       </div>
       <nav>
         <ul
-          class="flex flex-row gap-4 text-white text-xl font-sans-serif text-balance"
+          class="flex flex-row gap-4 text-white text-xl font-sans-serif text-balance max-lg:hidden"
         >
           <li
             class="cursor-pointer px-2 py-4"
@@ -21,26 +21,24 @@
             >
           </li>
         </ul>
+        <ModalHeaderComponent class="lg:hidden" />
       </nav>
     </article>
   </header>
 </template>
 
-<script >
-import { navigationLinks } from "../constant/headerNav";
-import ClimateComponent from "../../../components/ClimateComponent.vue";
-// import { ref } from "vue";
-export default {
-  name: "TheHeader",
-  components: {
-    ClimateComponent,
-  },
-  setup() {
-    // const user = ref([]);
-    return {
-      navigations: navigationLinks,
-    };
-  },
+<script setup>
+import { ref } from "vue";
+import { navigationLinks } from "@/assets/view/constant/headerNav";
+import ClimateComponent from "@/components/ClimateComponent.vue";
+import ModalHeaderComponent from "@/components/ModalHeader.vue";
+
+const navigations = navigationLinks;
+
+const menu = ref(false);
+const opneMenu = () => {
+  menu.value = true;
+  console.log(menu.value);
 };
 </script>
 

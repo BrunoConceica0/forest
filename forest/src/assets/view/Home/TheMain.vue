@@ -1,13 +1,19 @@
 <script setup>
 import ButtonReserve from "../../../components/ButtonReserve.vue";
+import { ref } from "vue";
+
+// nome do componente (opcional)
+defineOptions({
+  name: "TheMain",
+});
 </script>
 
 <template>
-  <main>
-    <div class="m-auto flex flex-col items-center justify-center shadow-lg">
+  <main class="container mx-auto">
+    <div class="m-auto flex flex-col items-center justify-center">
       <div class="relative">
         <video
-          class="rounded-xl h-[40rem] max-w-[150rem] object-cover"
+          class="rounded-xl h-[40rem] object-cover"
           width="1500"
           height="240"
           autoplay
@@ -47,7 +53,9 @@ import ButtonReserve from "../../../components/ButtonReserve.vue";
         </div>
       </div>
       <section class="grid grid-cols-[1fr_2fr] gap-4 container my-16">
-        <div class="*:text-white row-span-full">
+        <div
+          class="*:text-white row-2 bg-[url('../../../img/padrao.svg')] bg-no-repeat bg-cover bg-left-bottom"
+        >
           <h2
             class="capitalize text-5xl text-balance font-serif mb-10 col-span-full"
           >
@@ -57,45 +65,61 @@ import ButtonReserve from "../../../components/ButtonReserve.vue";
             class="*:mb-2 *:text-xl text-balance *:flex *:items-center *:gap-2"
           >
             <li>
-              <span class="h-0.2 w-6 inline-block neon"></span>Experimente a
-              natureza de perto
+              <span
+                class="h-0.2 w-6 inline-block neon hover:w-10 transition ease-in-out duration-300"
+              ></span
+              >Experimente a natureza de perto
             </li>
             <li>
-              <span class="h-0.2 w-6 inline-block neon"></span>Conecte-se com a
-              natureza
+              <span
+                class="h-0.2 w-6 inline-block neon hover:w-10 transition ease-in-out duration-300"
+              ></span
+              >Conecte-se com a natureza
             </li>
             <li class="flex items-center gap-2">
-              <span class="h-0.2 w-6 inline-block neon"></span>Desconecte-se do
-              digital
+              <span
+                class="h-0.2 w-6 inline-block neon hover:w-10 transition ease-in-out duration-300"
+              ></span
+              >Desconecte-se do digital
             </li>
             <li>
-              <span class="h-0.2 w-6 inline-block neon"></span>Observe a vida
-              selvagem
+              <span
+                class="h-0.2 w-6 inline-block neon hover:w-10 transition ease-in-out duration-300"
+              ></span
+              >Observe a vida selvagem
             </li>
             <li>
-              <span class="h-0.2 w-6 inline-block neon"></span>Escolha a sua
-              cabine preferida
+              <span
+                class="h-0.2 w-6 inline-block neon hover:w-10 transition ease-in-out duration-300"
+              ></span
+              >Escolha a sua cabine preferida
             </li>
           </ul>
         </div>
         <div
           class="col-span-1 row-span-2 grid grid-cols-[2fr_1fr] gap-8 *:*:object-cover *:*:rounded-lg *:*:shadow-lg"
         >
-          <div class="col-span-full relative">
+          <div
+            class="col-span-full relative hover:scale-103 transition ease-in-out duration-300"
+          >
             <img class="h-52 w-full" src="../../../img/casa1.jpg" alt="" />
             <span
               class="absolute uppercase text-sm/none top-0 right-0 text-white bg-verde-950/60 rounded-full py-2 px-4 m-2"
               >Ruby</span
             >
           </div>
-          <div class="relative">
+          <div
+            class="relative hover:scale-103 transition ease-in-out duration-300"
+          >
             <img src="../../../img/casa2.jpg" alt="" />
             <span
               class="absolute uppercase text-sm/none top-0 right-0 text-white bg-verde-950/60 rounded-full py-2 px-4 m-2"
               >Emerald</span
             >
           </div>
-          <div class="relative">
+          <div
+            class="relative hover:scale-103 transition ease-in-out duration-300"
+          >
             <img class="h-full" src="../../../img/casa3.jpg" alt="" />
             <span
               class="absolute uppercase text-sm/none top-0 right-0 text-white bg-verde-950/60 rounded-full py-2 px-4 m-2"
